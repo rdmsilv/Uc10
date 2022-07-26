@@ -1,0 +1,11 @@
+
+<a routerLink="contato">Contato</a>
+
+
+<div id="espaco-noticias" class="content-news">
+  <div *ngFor="let noticia of listaNoticias" class="cardnews">
+      <img [src]=noticia.imagem alt="foto da jogadora profissional">
+      <h3>{{ noticia.titulo }}</h3>
+      <p>{{ noticia.descricao }}</p>
+  </div>
+</div>
